@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Media Showcase</title>
+  <meta name="description" content="A premium media showcase of stunning images and cinematic videos." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 1 — Full-width Hero Video
+  ═══════════════════════════════════════════════ -->
+  <section class="hero-video-section">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 2 — Masonry Image Grid
+  ═══════════════════════════════════════════════ -->
+  <section class="media-section">
+    <div class="masonry-grid">
+      <div class="masonry-item masonry-tall fade-in" data-lightbox="https://picsum.photos/seed/lum1/1200/800">
+        <img src="https://picsum.photos/seed/lum1/800/600" alt="Image 1" />
+        <div class="item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="masonry-item fade-in" data-lightbox="https://picsum.photos/seed/lum2/1200/800">
+        <img src="https://picsum.photos/seed/lum2/800/600" alt="Image 2" />
+        <div class="item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="masonry-item fade-in" data-lightbox="https://picsum.photos/seed/lum3/1200/800">
+        <img src="https://picsum.photos/seed/lum3/800/600" alt="Image 3" />
+        <div class="item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="masonry-item masonry-tall fade-in" data-lightbox="https://picsum.photos/seed/lum4/1200/800">
+        <img src="https://picsum.photos/seed/lum4/800/600" alt="Image 4" />
+        <div class="item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="masonry-item fade-in" data-lightbox="https://picsum.photos/seed/lum5/1200/800">
+        <img src="https://picsum.photos/seed/lum5/800/600" alt="Image 5" />
+        <div class="item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="masonry-item fade-in" data-lightbox="https://picsum.photos/seed/lum6/1200/800">
+        <img src="https://picsum.photos/seed/lum6/800/600" alt="Image 6" />
+        <div class="item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 3 — Video Cards
+  ═══════════════════════════════════════════════ -->
+  <section class="media-section">
+    <div class="video-grid">
+      <div class="video-card fade-in">
+        <div class="video-card-inner">
+          <video src="https://www.w3schools.com/html/mov_bbb.mp4" muted loop playsinline preload="metadata"></video>
+          <div class="video-card-overlay">
+            <button class="play-btn" aria-label="Play video"><i class="fas fa-play"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="video-card fade-in">
+        <div class="video-card-inner">
+          <video src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" muted loop playsinline preload="metadata"></video>
+          <div class="video-card-overlay">
+            <button class="play-btn" aria-label="Play video"><i class="fas fa-play"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="video-card fade-in">
+        <div class="video-card-inner">
+          <video src="https://vjs.zencdn.net/v/oceans.mp4" muted loop playsinline preload="metadata"></video>
+          <div class="video-card-overlay">
+            <button class="play-btn" aria-label="Play video"><i class="fas fa-play"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 4 — Square Image Gallery
+  ═══════════════════════════════════════════════ -->
+  <section class="media-section">
+    <div class="gallery-grid">
+      <div class="gallery-item fade-in" data-lightbox="https://picsum.photos/seed/lum7/1200/1200">
+        <img src="https://picsum.photos/seed/lum7/600/600" alt="Image 7" />
+        <div class="item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item fade-in" data-lightbox="https://picsum.photos/seed/lum8/1200/1200">
+        <img src="https://picsum.photos/seed/lum8/600/600" alt="Image 8" />
+        <div class="item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item fade-in" data-lightbox="https://picsum.photos/seed/lum9/1200/1200">
+        <img src="https://picsum.photos/seed/lum9/600/600" alt="Image 9" />
+        <div class="item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item fade-in" data-lightbox="https://picsum.photos/seed/lum10/1200/1200">
+        <img src="https://picsum.photos/seed/lum10/600/600" alt="Image 10" />
+        <div class="item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item fade-in" data-lightbox="https://picsum.photos/seed/lum11/1200/1200">
+        <img src="https://picsum.photos/seed/lum11/600/600" alt="Image 11" />
+        <div class="item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item fade-in" data-lightbox="https://picsum.photos/seed/lum12/1200/1200">
+        <img src="https://picsum.photos/seed/lum12/600/600" alt="Image 12" />
+        <div class="item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item fade-in" data-lightbox="https://picsum.photos/seed/lum13/1200/1200">
+        <img src="https://picsum.photos/seed/lum13/600/600" alt="Image 13" />
+        <div class="item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+      <div class="gallery-item fade-in" data-lightbox="https://picsum.photos/seed/lum14/1200/1200">
+        <img src="https://picsum.photos/seed/lum14/600/600" alt="Image 14" />
+        <div class="item-overlay"><i class="fas fa-search-plus"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 5 — Full-width Video Banner
+  ═══════════════════════════════════════════════ -->
+  <section class="hero-video-section">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 6 — Wide Landscape Images
+  ═══════════════════════════════════════════════ -->
+  <section class="media-section">
+    <div class="wide-grid">
+      <div class="wide-item fade-in" data-lightbox="https://picsum.photos/seed/lum15/1600/686">
+        <img src="https://picsum.photos/seed/lum15/1200/514" alt="Image 15" />
+        <div class="item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="wide-item fade-in" data-lightbox="https://picsum.photos/seed/lum16/1600/686">
+        <img src="https://picsum.photos/seed/lum16/1200/514" alt="Image 16" />
+        <div class="item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 7 — More Video Cards (inline row)
+  ═══════════════════════════════════════════════ -->
+  <section class="media-section">
+    <div class="video-grid video-grid-2col">
+      <div class="video-card fade-in">
+        <div class="video-card-inner">
+          <video src="https://www.w3schools.com/html/mov_bbb.mp4" muted loop playsinline preload="metadata"></video>
+          <div class="video-card-overlay">
+            <button class="play-btn" aria-label="Play video"><i class="fas fa-play"></i></button>
+          </div>
+        </div>
+      </div>
+      <div class="video-card fade-in">
+        <div class="video-card-inner">
+          <video src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" muted loop playsinline preload="metadata"></video>
+          <div class="video-card-overlay">
+            <button class="play-btn" aria-label="Play video"><i class="fas fa-play"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 8 — Final Masonry Grid
+  ═══════════════════════════════════════════════ -->
+  <section class="media-section">
+    <div class="masonry-grid">
+      <div class="masonry-item fade-in" data-lightbox="https://picsum.photos/seed/lum17/1200/800">
+        <img src="https://picsum.photos/seed/lum17/800/600" alt="Image 17" />
+        <div class="item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="masonry-item masonry-tall fade-in" data-lightbox="https://picsum.photos/seed/lum18/1200/800">
+        <img src="https://picsum.photos/seed/lum18/800/600" alt="Image 18" />
+        <div class="item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="masonry-item fade-in" data-lightbox="https://picsum.photos/seed/lum19/1200/800">
+        <img src="https://picsum.photos/seed/lum19/800/600" alt="Image 19" />
+        <div class="item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="masonry-item masonry-wide fade-in" data-lightbox="https://picsum.photos/seed/lum20/1200/800">
+        <img src="https://picsum.photos/seed/lum20/800/600" alt="Image 20" />
+        <div class="item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="masonry-item fade-in" data-lightbox="https://picsum.photos/seed/lum21/1200/800">
+        <img src="https://picsum.photos/seed/lum21/800/600" alt="Image 21" />
+        <div class="item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+      <div class="masonry-item fade-in" data-lightbox="https://picsum.photos/seed/lum22/1200/800">
+        <img src="https://picsum.photos/seed/lum22/800/600" alt="Image 22" />
+        <div class="item-overlay"><i class="fas fa-expand"></i></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       SECTION 9 — Closing Full-width Video
+  ═══════════════════════════════════════════════ -->
+  <section class="hero-video-section hero-video-short">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-overlay"></div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════
+       LIGHTBOX MODAL
+  ═══════════════════════════════════════════════ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close"><i class="fas fa-xmark"></i></button>
+    <button class="lightbox-nav lb-prev" id="lightboxPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+    <button class="lightbox-nav lb-next" id="lightboxNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+    <div class="lightbox-content">
+      <img src="" alt="Lightbox" id="lightboxImg" />
+    </div>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
