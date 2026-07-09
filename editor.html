@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Blocksmith Editor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600&family=Archivo:wght@400;500;600&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Editor top bar ===== -->
+  <header id="topbar">
+    <div class="brand" title="Blocksmith">
+      <span class="brand-glyph">▦</span> Blocksmith
+    </div>
+
+    <div class="page-ctl">
+      <label class="sr-only" for="pageSelect">Current page</label>
+      <select id="pageSelect"></select>
+      <button id="btnNewPage"    class="tb-btn" title="Create a new page">+ Page</button>
+      <button id="btnRenamePage" class="tb-btn" title="Rename this page">Rename</button>
+      <button id="btnDeletePage" class="tb-btn danger" title="Delete this page">Delete</button>
+    </div>
+
+    <div class="actions">
+      <button id="btnUndo" class="tb-btn" title="Undo (Ctrl+Z)" disabled>↶ Undo</button>
+      <button id="btnRedo" class="tb-btn" title="Redo (Ctrl+Y)" disabled>↷ Redo</button>
+      <button id="btnSave" class="tb-btn primary" title="Save changes (Ctrl+S)" disabled>Save<span id="dirtyDot" class="dirty-dot" hidden>●</span></button>
+      <button id="btnPreview" class="tb-btn" title="Toggle preview (hides the editor)">Preview</button>
+      <a id="btnViewSite" class="tb-btn" href="index.html?p=home" target="_blank" rel="noopener" title="Open this page as visitors see it">View page ↗</a>
+      <button id="btnImport" class="tb-btn" title="Import a data.json file">Import</button>
+      <button id="btnExport" class="tb-btn" title="Download data.json to commit to your repo">Export data.json</button>
+    </div>
+  </header>
+
+  <!-- ===== Editor body ===== -->
+  <div id="app">
+    <aside id="sidebar">
+
+      <!-- Panel 1: list of sections on the current page -->
+      <div id="panelList" class="panel">
+        <div class="panel-head">
+          <h2>Sections</h2>
+          <span class="hint">drag to reorder</span>
+        </div>
+        <ul id="sectionList" class="section-list"></ul>
+        <button id="btnAddSection" class="add-btn">＋ Add section</button>
+      </div>
+
+      <!-- Panel 2: settings of the selected section -->
+      <div id="panelEdit" class="panel" hidden>
+        <div class="panel-head">
+          <button id="btnBack" class="back-btn" title="Back to section list">←</button>
+          <h2 id="editTitle">Edit section</h2>
+        </div>
+        <div id="editBody" class="edit-body"></div>
+      </div>
+
+    </aside>
+
+    <main id="canvasWrap">
+      <div id="canvas" class="site"></div>
+    </main>
+  </div>
+
+  <!-- ===== Preview-mode exit button ===== -->
+  <button id="btnExitPreview" class="exit-preview" hidden>Exit preview</button>
+
+  <!-- ===== Add-section modal ===== -->
+  <div id="modal" class="modal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-head">
+        <h2 id="modalTitle">Add a section</h2>
+        <button id="btnCloseModal" class="back-btn" title="Close">✕</button>
+      </div>
+      <div id="sectionCatalog" class="catalog"></div>
+    </div>
+  </div>
+    <footer class="view-foot">
+      Built with Blocksmith · <a href="index.html">Open the editor</a>
+    </footer>
+  </div>
+
+  <div id="toast" class="toast" hidden></div>
+  <input type="file" id="importInput" accept="application/json" hidden />
+
+  <script src="js/schemas.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/media.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/history.js"></script>
+  <script src="js/editor.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
